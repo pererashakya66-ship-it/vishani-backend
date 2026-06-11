@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
 const API_BASE = process.env.API_BASE_URL ||
-  `http://${process.env.HOST || '192.168.1.50'}:${process.env.PORT || 3000}/api`;
+  `${process.env.HOST}/api`;
 
 router.get('/:userId', (req, res) => {
   const { userId } = req.params;
